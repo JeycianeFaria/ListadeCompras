@@ -1,18 +1,20 @@
 body{
-    padding: 0;
-    margin: 0;
     background-color: #101011;
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
+    color:  #101011;
+    letter-spacing: 5px;
+    text-align: center;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #2b2b2e;
 }
 
 input {
     border: none;
+    border-radius: 5px;
     padding: 0.5em;
 }
 
@@ -22,41 +24,46 @@ ul {
 }
 
 li {
+    color:  #101011;
     margin: 0.5em 0px;
 }
 
-
-#item-button {
-    cursor: pointer;
-    padding: 0.5em;
-    background-color: #f4d58d;
-    border: none;
-}
-
-.app {
+#container {
+    background-image: url('/imagem/eduardo-soares-QsYXYSwV3NU-unsplash.jpg');
+    background-size: 100vmax 100vmin;
+    height: 100vh;
     position: relative;
 }
 
-.container {
+#item-button {
+    background-color: #f4d58d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+#item-button:hover {
+    background-color: #f1c661;
+}
+
+.listaDeCompras {
     background-color: #a8bfb6;
-    position: absolute;
-    padding: 1em 2em;
-
+    border-radius: 20px 5px 20px 5px;
     left: 0;
-    right: 0;
     margin: auto;
-
-    width: 400px;
-
+    opacity: 0.8;
+    padding: 1em 2em;
+    position: absolute;
+    right: 0;
     top: 50vh;
     transform: translateY(-50%);
-
-    border-radius: 5px;
+    width: 400px;
 }
 
 .remove{
-    border: none;
     background-color: #f4d58d;
-    margin-right: 5px;
+    border: none;
     cursor: pointer;
+    margin-right: 5px;
 }
